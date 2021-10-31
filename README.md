@@ -15,7 +15,7 @@ In Linux, while in the same directory with [docker-compose.yml](https://github.c
 
 ### `docker compose up`
 
-After setting up [mongodb](http://localhost:27017) and [mongo-express](http://localhost:8081) you can reach to them by browser using localhost and ports 27017, 8081 respectively. To manipulate you can only use mongo-express. Use mongo-express and create a DB called **earthquakes**
+After setting up [mongodb](http://localhost:27017) and [mongo-express](http://localhost:8081) you can reach to them by browser using localhost and ports 27017, 8081 respectively. To manipulate you can only use mongo-express or cli. Use mongo-express and create a DB called **earthquakes**
 
 ### `pip install bs4`
 
