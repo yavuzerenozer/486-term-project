@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: com.earthquake.pattern.design.DesignApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.825 s <<< FAILURE! - in com.earthquake.pattern.design.DesignApplicationTests
+contextLoads  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mongo' defined in class path resource [org/springframework/boot/autoconfigure/mongo/MongoAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.mongodb.client.MongoClient]: Factory method 'mongo' threw exception; nested exception is java.lang.IllegalStateException: Invalid mongo configuration, either uri or host/port/credentials/replicaSet must be specified
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.mongodb.client.MongoClient]: Factory method 'mongo' threw exception; nested exception is java.lang.IllegalStateException: Invalid mongo configuration, either uri or host/port/credentials/replicaSet must be specified
+Caused by: java.lang.IllegalStateException: Invalid mongo configuration, either uri or host/port/credentials/replicaSet must be specified
+
