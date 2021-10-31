@@ -25,17 +25,17 @@ We need to get json data of last 500 earthquakes by running python koeri.py. Aft
 
  - import file to mongodb container
 
-**docker cp last_500.json mongodb:/tmp/last_500.json**
+`docker cp last_500.json mongodb:/tmp/last_500.json`
 
 
 - get into mongodb
 
-**docker exec -it mongodb sh**
+`docker exec -it mongodb sh`
 
 
 -  import data to mongodb
 
- **mongoimport --db earthquakes --collection earthquake  --authenticationDatabase admin --username root --password pass --drop --jsonArray /tmp/last_500.json**
+ `mongoimport --db earthquakes --collection earthquake  --authenticationDatabase admin --username root --password pass --drop --jsonArray /tmp/last_500.json`
 
 
 
