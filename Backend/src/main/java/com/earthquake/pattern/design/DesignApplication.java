@@ -12,14 +12,14 @@ public class DesignApplication {
 		SpringApplication.run(DesignApplication.class, args);
 	}
 
-	@Bean
-	CommandLineRunner runner(EarthquakeRepository repository) {
-		return args -> {
-			Earthquake earthquake = new Earthquake("example","today","example","example","example","example","example","example");
-			repository.save(earthquake);
-
-		};
-
-	}
+//	@Bean
+//	CommandLineRunner runner(EarthquakeRepository repository) {
+//		return args -> {
+//			Earthquake earthquake = new Earthquake("example","today","example","example","example","example","example","example");
+//			repository.save(earthquake);
+//
+//		};
+//
+//	}
 
 }

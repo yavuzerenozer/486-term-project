@@ -12,11 +12,9 @@ import java.util.List;
 
 public class EarthquakeAfadService {
 
-    private List<EarthquakeAfad> earthquakeAfads;
     private final String uri = "https://www.mertkose.net/api/son-depremler/";
 
-    public EarthquakeAfadService(List<EarthquakeAfad> earthquakeAfadList){
-            this.earthquakeAfads = earthquakeAfadList;
+    public EarthquakeAfadService(){
         }
 
     public List<EarthquakeAfad> giveEarthquakeAfads() {
@@ -45,12 +43,6 @@ public class EarthquakeAfadService {
         return earthquakeAfadList;
     }
 
-    public List<EarthquakeAfad> getEarthquakeAfads() {
-        return earthquakeAfads;
-    }
 
-    public void setEarthquakeAfads(List<EarthquakeAfad> earthquakeAfads) {
-        this.earthquakeAfads = earthquakeAfads;
-    }
 }
 

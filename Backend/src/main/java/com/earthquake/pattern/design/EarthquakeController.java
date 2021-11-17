@@ -17,11 +17,9 @@ public class EarthquakeController {
     @CrossOrigin(origins = "*")
     @GetMapping("/")
     public List<Earthquake> GetEarthquakes() {
-        //return earthquakeService.getAllEarthquakes();
-        List<EarthquakeAfad> earthquakeAfads = new ArrayList<EarthquakeAfad>();
-        EarthquakeAfadService earthquakeAfadService = new EarthquakeAfadService(earthquakeAfads);
-        earthquakeAfadService.setEarthquakeAfads(earthquakeAfadService.giveEarthquakeAfads());
-        earthquakeAfads=earthquakeAfadService.getEarthquakeAfads();
+        //List<Earthquake> earthquakes = earthquakeService.getAllEarthquakes();
+        EarthquakeAfadService earthquakeAfadService = new EarthquakeAfadService();
+        List<EarthquakeAfad> earthquakeAfads = earthquakeAfadService.giveEarthquakeAfads();
         List<Earthquake> earthquakes = new ArrayList<>();
         for(int i=0; i < earthquakeAfads.size(); i++){
             EarthquakeAfadAdapter earthquakeAfadAdapter = new EarthquakeAfadAdapter(earthquakeAfads.get(i));
