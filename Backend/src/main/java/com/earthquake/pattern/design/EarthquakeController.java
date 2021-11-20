@@ -23,6 +23,7 @@ public class EarthquakeController {
         List<Earthquake> earthquakes = new ArrayList<>();
         for(int i=0; i < earthquakeAfads.size(); i++){
             EarthquakeAfadAdapter earthquakeAfadAdapter = new EarthquakeAfadAdapter(earthquakeAfads.get(i));
+            earthquakeAfadAdapter.show();
             earthquakes.add(earthquakeAfadAdapter);
         }
         return earthquakes;

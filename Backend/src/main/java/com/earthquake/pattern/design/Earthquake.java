@@ -10,7 +10,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Earthquake {
+public class Earthquake implements EarthquakeIn {
 
     @Id
     private String _id;
@@ -22,5 +22,8 @@ public class Earthquake {
     private String ml;
     private String type;
 
+    public void show() {
+        System.out.println(this);
+    }
 
 }

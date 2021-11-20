@@ -8,7 +8,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class EarthquakeAfad {
+public class EarthquakeAfad implements EarthquakeIn{
 
     private String eventId;
     private String time;
@@ -22,5 +22,7 @@ public class EarthquakeAfad {
     private String city;
     private String other;
 
-
+    public void show() {
+        System.out.println(this);
+    }
 }
